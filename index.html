@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DriveQuest — Every Drive Becomes a Lesson</title>
+    <meta name="description" content="DriveQuest is an AI driving coach for teens. Turn every trip into a personalized lesson with DriveScore, goals, micro-courses, and practice routes." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Cdefs/%3E%3Crect width='256' height='256' rx='56' fill='%230b1020'/%3E%3Cpath d='M64 176l32-64 32 32 64-64' fill='none' stroke='%234f8cff' stroke-width='16' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='176' cy='80' r='10' fill='%2312d6a4'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-elevate>
+      <div class="container header-inner">
+        <a href="#top" class="brand">
+          <span class="logo" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 256 256" fill="none" aria-hidden="true">
+              <rect width="256" height="256" rx="56" fill="var(--dq-bg-800)" />
+              <path d="M64 176l32-64 32 32 64-64" stroke="var(--dq-primary-500)" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" />
+              <circle cx="176" cy="80" r="12" fill="var(--dq-accent-500)" />
+            </svg>
+          </span>
+          <span class="brand-name">DriveQuest</span>
+        </a>
+        <nav class="nav">
+          <a href="#features">Features</a>
+          <a href="#how">How it works</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#faq">FAQ</a>
+          <a class="btn btn-primary btn-sm" href="#cta">Join waitlist</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="hero" class="section hero">
+        <div class="container hero-inner">
+          <div class="hero-copy" data-animate>
+            <h1>Every drive becomes a lesson</h1>
+            <p class="sub">DriveQuest is the AI coach for teen drivers. Get a DriveScore after each trip, focused goals each week, and short lessons that build safer habits.</p>
+
+            <form class="waitlist" id="waitlistForm" aria-label="Join the DriveQuest waitlist">
+              <label for="email" class="sr-only">Email address</label>
+              <input id="email" name="email" type="email" placeholder="Enter your email" required />
+              <button class="btn btn-primary" type="submit">Join the waitlist</button>
+              <p class="form-note">No spam. We’ll notify you at launch.</p>
+            </form>
+
+
+          </div>
+
+          <div class="hero-visual" data-animate data-animate-delay="100">
+            <div class="phone">
+              <div class="phone-notch" aria-hidden="true">
+                <div class="notch-speaker"></div>
+                <div class="notch-camera"></div>
+              </div>
+              <div class="phone-screen">
+                <!-- Status Bar -->
+                <div class="status-bar">
+                  <div class="status-left">
+                    <span class="time">2:46</span>
+                  </div>
+                  <div class="status-right">
+                    <div class="signal-bars">
+                      <div class="signal-bar full"></div>
+                      <div class="signal-bar full"></div>
+                      <div class="signal-bar full"></div>
+                      <div class="signal-bar weak"></div>
+                    </div>
+
+                    <div class="battery-container">
+                      <div class="battery-indicator">
+                        <div class="battery-level"></div>
+                      </div>
+                      <span class="battery-percent">85%</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- App Header -->
+                <div class="app-header-new">
+                  <div class="welcome-text">
+                    <span class="welcome-label">Welcome back,</span>
+                    <h2 class="user-name">Alex</h2>
+                  </div>
+                </div>
+
+                <!-- Main Score Card -->
+                <div class="score-card">
+                  <div class="score-header">
+                    <span class="score-title">Your Recent Score</span>
+                  </div>
+                  
+                  <div class="score-content">
+                    <div class="score-circle">
+                      <svg class="progress-ring" width="100" height="100">
+                        <circle cx="50" cy="50" r="40" stroke="rgba(255,255,255,0.15)" stroke-width="6" fill="none"/>
+                        <circle cx="50" cy="50" r="40" stroke="var(--dq-primary-500)" stroke-width="6" fill="none" 
+                                stroke-dasharray="251.3" stroke-dashoffset="37.7" stroke-linecap="round" transform="rotate(-90 50 50)"/>
+                      </svg>
+                      <div class="score-center">
+                        <span class="main-score">85</span>
+                      </div>
+                    </div>
+                    
+                    <div class="score-details">
+                      <div class="score-item">
+                        <div class="score-indicator"></div>
+                        <span class="score-label">Past Week</span>
+                        <span class="score-value">78</span>
+                      </div>
+                      <div class="score-item">
+                        <div class="score-indicator"></div>
+                        <span class="score-label">Past Month</span>
+                        <span class="score-value">82</span>
+                      </div>
+                      <div class="score-item">
+                        <div class="score-indicator"></div>
+                        <span class="score-label">Safety Rating</span>
+                        <span class="score-rating">Good</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Progress Card -->
+                <div class="progress-card">
+                  <div class="progress-header">
+                    <span class="progress-title">Progress to License</span>
+                  </div>
+                  <div class="progress-content">
+                    <div class="hours-info">
+                      <span class="hours-label">Total Hours Driven</span>
+                      <span class="hours-value">28.5 / 40 hrs</span>
+                    </div>
+                    <div class="progress-bar-container">
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 71%"></div>
+                      </div>
+                      <span class="hours-remaining">11.5 hours remaining</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Skills Section -->
+                <div class="skills-section">
+                  <div class="skills-header">
+                    <span class="skills-title">Driving Skills</span>
+                  </div>
+                  
+                  <div class="skills-grid">
+                    <div class="skill-item">
+                      <div class="skill-info">
+                        <span class="skill-name">Smooth Braking</span>
+                        <span class="skill-score">88%</span>
+                      </div>
+                      <div class="skill-bar">
+                        <div class="skill-progress" style="width: 88%"></div>
+                      </div>
+                    </div>
+                    <div class="skill-item">
+                      <div class="skill-info">
+                        <span class="skill-name">Safe Turns</span>
+                        <span class="skill-score">76%</span>
+                      </div>
+                      <div class="skill-bar">
+                        <div class="skill-progress" style="width: 76%"></div>
+                      </div>
+                    </div>
+                    <div class="skill-item">
+                      <div class="skill-info">
+                        <span class="skill-name">Focus & Attention</span>
+                        <span class="skill-score">92%</span>
+                      </div>
+                      <div class="skill-bar">
+                        <div class="skill-progress" style="width: 92%"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Bottom Navigation -->
+                <div class="bottom-nav">
+                  <div class="nav-item active">
+                    <svg class="nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                      <path d="M3 12L5 10L12 17L22 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="nav-label">Dashboard</span>
+                  </div>
+                  <div class="nav-item">
+                    <svg class="nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                      <path d="M21 10C21 17 12 23 12 23S3 17 3 10C3 5 7 1 12 1S21 5 21 10Z" stroke="currentColor" stroke-width="2"/>
+                      <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <span class="nav-label">Routes</span>
+                  </div>
+                  <div class="nav-item">
+                    <svg class="nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                      <path d="M2 3H8C9.1 3 10 3.9 10 5V19C10 20.1 9.1 21 8 21H2V3Z" stroke="currentColor" stroke-width="2"/>
+                      <path d="M22 3H16C14.9 3 14 3.9 14 5V19C14 20.1 14.9 21 16 21H22V3Z" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <span class="nav-label">Courses</span>
+                  </div>
+                  <div class="nav-item">
+                    <svg class="nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                      <path d="M18 20V10M12 20V4M6 20V14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <span class="nav-label">History</span>
+                  </div>
+                  <div class="nav-item">
+                    <svg class="nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                      <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="currentColor" stroke-width="2"/>
+                      <path d="M19.4 15C19.2 15.3 19.2 15.7 19.4 16L20.4 17.9C20.6 18.3 20.5 18.8 20.1 19.1L18.1 20.8C17.7 21.1 17.2 21.1 16.8 20.8L15 19.8C14.7 19.6 14.3 19.6 14 19.8L12.1 20.8C11.7 21.1 11.2 21.1 10.9 20.8L8.9 19.1C8.5 18.8 8.4 18.3 8.6 17.9L9.6 16C9.8 15.7 9.8 15.3 9.6 15L8.6 13.1C8.4 12.7 8.5 12.2 8.9 11.9L10.9 10.2C11.3 9.9 11.8 9.9 12.1 10.2L14 11.2C14.3 11.4 14.7 11.4 15 11.2L16.9 10.2C17.3 9.9 17.8 9.9 18.1 10.2L20.1 11.9C20.5 12.2 20.6 12.7 20.4 13.1L19.4 15Z" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <span class="nav-label">Settings</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <span class="hero-glow" aria-hidden="true"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section trust" aria-label="Privacy and trust">
+        <div class="container trust-inner" data-animate>
+          <div class="trust-badge">
+            <span class="dot"></span>
+            <div>
+              <div class="trust-title">Privacy-first</div>
+              <div class="trust-sub">Opt-in sharing. On-device processing. Family control.</div>
+            </div>
+          </div>
+          <div class="trust-badge">
+            <span class="dot"></span>
+            <div>
+              <div class="trust-title">Safety by design</div>
+              <div class="trust-sub">No interaction while driving. Background only.</div>
+            </div>
+          </div>
+          <div class="trust-badge">
+            <span class="dot"></span>
+            <div>
+              <div class="trust-title">Built with experts</div>
+              <div class="trust-sub">Advisors from insurance and road safety.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section features">
+        <div class="container">
+          <h2 class="section-title" data-animate>What you get</h2>
+          <div class="grid features-grid">
+            <article class="card" data-animate>
+              <div class="icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3a9 9 0 1 0 9 9h-2A7 7 0 1 1 12 5V3Zm8-1h-6v6h2V5.41l3.3 3.3 1.4-1.41L17.41 4H20V2Z"/></svg>
+              </div>
+              <h3>DriveScore</h3>
+              <p>A clear safety score after each trip with a breakdown of speeding, braking, turns, and distraction.</p>
+            </article>
+            <article class="card" data-animate data-animate-delay="50">
+              <div class="icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 1a11 11 0 1 0 11 11A11.013 11.013 0 0 0 12 1Zm1 11.59L16.59 17l1.41-1.41L14.41 12l3.59-3.59L16.59 7 13 10.59 9.41 7 8 8.41 11.59 12 8 15.59 9.41 17Z"/></svg>
+              </div>
+              <h3>Weekly goals</h3>
+              <p>Spot patterns over time and focus on one thing each week to improve, with gentle coach nudges.</p>
+            </article>
+            <article class="card" data-animate data-animate-delay="100">
+              <div class="icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 3h16v2H4zm0 6h16v2H4zm0 6h10v2H4z"/></svg>
+              </div>
+              <h3>Micro-lessons</h3>
+              <p>Short, targeted lessons tied to your real driving—lane changes, following distance, merging, and more.</p>
+            </article>
+            <article class="card" data-animate data-animate-delay="150">
+              <div class="icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21 11h-6l-2-3-2 6-2-3H3l2 7h14z"/></svg>
+              </div>
+              <h3>Practice routes</h3>
+              <p>Choose the fastest route or AI practice routes designed around your goals at safer times.</p>
+            </article>
+            <article class="card" data-animate data-animate-delay="200">
+              <div class="icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5Zm0 2c-4.33 0-8 2.17-8 5v1h16v-1c0-2.83-3.67-5-8-5Z"/></svg>
+              </div>
+              <h3>Parent view</h3>
+              <p>Weekly summaries and trends so parents can support—not hover. Transparency and control built in.</p>
+            </article>
+            <article class="card" data-animate data-animate-delay="250">
+              <div class="icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 1 3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5Zm-1 16-4-4 1.41-1.41L11 13.17l4.59-4.58L17 10Z"/></svg>
+              </div>
+              <h3>Privacy-first</h3>
+              <p>Opt-in data sharing with explicit family consent. On-device processing and easy data delete/export.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="how" class="section how">
+        <div class="container">
+          <h2 class="section-title" data-animate>How it works</h2>
+          <div class="how-steps" data-animate>
+            <div class="step">
+              <div class="step-num">1</div>
+              <h4>Sense</h4>
+              <p>Phone sensors capture speed, acceleration, and motion—no extra hardware.</p>
+            </div>
+            <div class="step">
+              <div class="step-num">2</div>
+              <h4>Analyze</h4>
+              <p>AI models detect risky segments and skills to practice next.</p>
+            </div>
+            <div class="step">
+              <div class="step-num">3</div>
+              <h4>Coach</h4>
+              <p>Get a DriveScore and one weekly focus goal, reinforced by micro-lessons.</p>
+            </div>
+            <div class="step">
+              <div class="step-num">4</div>
+              <h4>Improve</h4>
+              <p>See progress trend up over time. Parents get transparent summaries.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="section pricing">
+        <div class="container">
+          <h2 class="section-title" data-animate>Simple, supportive pricing</h2>
+          <div class="pricing-grid">
+            <article class="price-card" data-animate>
+              <h3 class="plan">Free</h3>
+              <p class="plan-sub">Safety reports and weekly focus</p>
+              <ul class="plan-list">
+                <li>DriveScore after each drive</li>
+                <li>Weekly patterns and 1 goal</li>
+                <li>Parent summaries</li>
+              </ul>
+              <div class="plan-cta">
+                <span class="price">$0</span>
+                <a href="#cta" class="btn btn-secondary">Join waitlist</a>
+              </div>
+            </article>
+            <article class="price-card highlight" data-animate data-animate-delay="80">
+              <h3 class="plan">Premium</h3>
+              <p class="plan-sub">Full coaching experience</p>
+              <ul class="plan-list">
+                <li>All free features</li>
+                <li>Adaptive micro-lessons</li>
+                <li>AI practice routes</li>
+                <li>Deep analytics</li>
+              </ul>
+              <div class="plan-cta">
+                <span class="price">$7.99<span class="per">/mo</span></span>
+                <a href="#cta" class="btn btn-primary">Get notified</a>
+              </div>
+            </article>
+            <article class="price-card" data-animate data-animate-delay="120">
+              <h3 class="plan">For insurers</h3>
+              <p class="plan-sub">Improvement signals (opt-in)</p>
+              <ul class="plan-list">
+                <li>Improvement deltas</li>
+                <li>Risk segment trends</li>
+                <li>Engagement signals</li>
+              </ul>
+              <div class="plan-cta">
+                <span class="price">$75<span class="per">/driver·yr</span></span>
+                <a href="#cta" class="btn btn-outline">Partner with us</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="partners" class="section partners">
+        <div class="container">
+          <h2 class="section-title" data-animate>Supported by industry leaders</h2>
+          
+          <div class="partners-grid" data-animate>
+            <div class="partner-logo">
+              <img src="./logos/genixcyber logo.png" alt="Genix Cyber" class="logo-img">
+              <h3>Genix Cyber</h3>
+            </div>
+            
+            <div class="partner-logo">
+              <img src="./logos/fleetdrive360 logo.png" alt="FleetDrive 360" class="logo-img">
+              <h3>FleetDrive 360</h3>
+            </div>
+            
+            <div class="partner-logo">
+              <img src="./logos/gdot logo.png" alt="Georgia Department of Transportation" class="logo-img">
+              <h3>Georgia DOT</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="section faq">
+        <div class="container">
+          <h2 class="section-title" data-animate>Questions, answered</h2>
+          <div class="faq-grid">
+            <details class="faq-item" data-animate>
+              <summary>Does DriveQuest require special hardware?</summary>
+              <p>No. Your phone’s sensors are enough. We optimize for low battery impact.</p>
+            </details>
+            <details class="faq-item" data-animate data-animate-delay="50">
+              <summary>Will the app distract me while I drive?</summary>
+              <p>Never. DriveQuest runs in the background and only interacts before or after your trip.</p>
+            </details>
+            <details class="faq-item" data-animate data-animate-delay="100">
+              <summary>Who can see my data?</summary>
+              <p>You’re in control. Families can opt in to share improvement metrics with insurers for discounts.</p>
+            </details>
+            <details class="faq-item" data-animate data-animate-delay="150">
+              <summary>When is the app launching?</summary>
+              <p>We’re preparing our beta launch. Join the waitlist to be first in line.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section id="cta" class="section cta">
+        <div class="container cta-inner" data-animate>
+          <h2>Be first to get DriveQuest</h2>
+          <p>Join the waitlist and we’ll notify you when we launch in your area.</p>
+          <form class="waitlist waitlist-inline" id="waitlistForm2" aria-label="Join the DriveQuest waitlist">
+            <label for="email2" class="sr-only">Email address</label>
+            <input id="email2" name="email" type="email" placeholder="Enter your email" required />
+            <button class="btn btn-primary" type="submit">Notify me</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <div class="brand">
+            <span class="logo" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 256 256" fill="none" aria-hidden="true">
+                <rect width="256" height="256" rx="56" fill="var(--dq-bg-800)" />
+                <path d="M64 176l32-64 32 32 64-64" stroke="var(--dq-primary-500)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" />
+                <circle cx="176" cy="80" r="10" fill="var(--dq-accent-500)" />
+              </svg>
+            </span>
+            <span class="brand-name">DriveQuest</span>
+          </div>
+          <p class="foot-note">Built by teens, for teens. © <span id="year"></span> DriveQuest</p>
+        </div>
+        <nav class="footer-nav">
+          <a href="#features">Features</a>
+          <a href="#how">How it works</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#faq">FAQ</a>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
