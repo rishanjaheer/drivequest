@@ -70,10 +70,10 @@
         // Since we're using no-cors, we can't read the response
         // But we can assume it worked if no error was thrown
         
-        // Success - show confirmation
-        submitBtn.textContent = 'Added ✓';
-        submitBtn.classList.add('btn-secondary');
-        submitBtn.classList.remove('btn-primary');
+                      // Success - show confirmation
+              submitBtn.innerHTML = '<span class="checkmark">✓</span>Added to waitlist';
+              submitBtn.classList.add('btn-success');
+              submitBtn.classList.remove('btn-primary');
         
         // Also save to local storage as backup
         try {
@@ -103,9 +103,9 @@
             localStorage.setItem(key, JSON.stringify(existing));
           }
           
-          submitBtn.textContent = 'Added ✓';
-          submitBtn.classList.add('btn-secondary');
-          submitBtn.classList.remove('btn-primary');
+                          submitBtn.innerHTML = '<span class="checkmark">✓</span>Added to waitlist';
+                submitBtn.classList.add('btn-success');
+                submitBtn.classList.remove('btn-primary');
           form.reset();
           
           showNotification('Added to waitlist! (Saved locally)', 'info');
@@ -115,13 +115,13 @@
         }
       }
 
-      // Reset button after delay
-      setTimeout(() => {
-        submitBtn.textContent = originalText;
-        submitBtn.classList.remove('btn-secondary');
-        submitBtn.classList.add('btn-primary');
-        submitBtn.disabled = false;
-      }, 3000);
+                  // Reset button after delay
+            setTimeout(() => {
+              submitBtn.textContent = originalText;
+              submitBtn.classList.remove('btn-success');
+              submitBtn.classList.add('btn-primary');
+              submitBtn.disabled = false;
+            }, 3000);
     });
   }
 
