@@ -510,6 +510,97 @@ img { max-width: 100%; display: block; }
   border-color: rgba(255,255,255,0.16);
 }
 
+/* App Store Button */
+.hero-cta {
+  margin-top: 32px;
+}
+
+.app-store-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 24px;
+  background: #000;
+  color: #fff;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.2s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.app-store-btn:hover {
+  background: #1a1a1a;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.app-store-btn.large {
+  padding: 18px 32px;
+  font-size: 18px;
+}
+
+.app-store-btn svg {
+  flex-shrink: 0;
+}
+
+/* Support Section */
+.support {
+  background: var(--dq-surface-100);
+}
+
+.support-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.support-card {
+  background: var(--dq-surface-200);
+  padding: 32px;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.support-card h3 {
+  font-size: 20px;
+  margin: 0 0 12px;
+  font-weight: 600;
+}
+
+.support-card p {
+  color: var(--dq-text-2);
+  margin: 0 0 20px;
+  line-height: 1.6;
+}
+
+.support-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.support-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--dq-primary-500);
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.2s ease;
+}
+
+.support-link:hover {
+  color: var(--dq-primary-600);
+}
+
+.support-link svg {
+  flex-shrink: 0;
+  stroke-width: 2;
+}
+
 /* Responsive */
 @media (max-width: 1080px) {
   .hero-inner { grid-template-columns: 1fr; }
@@ -723,5 +814,16 @@ img { max-width: 100%; display: block; }
   }
   .container {
     padding: 0 16px;
+  }
+  .support-content {
+    grid-template-columns: 1fr;
+  }
+  .app-store-btn {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+  .app-store-btn.large {
+    padding: 16px 24px;
+    font-size: 16px;
   }
 }
